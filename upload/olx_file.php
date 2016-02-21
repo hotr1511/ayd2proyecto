@@ -8,13 +8,16 @@ class airbook_file{
 			$target_file = $target_dir . $md5_filename . time();
 			// Colocamos la extension adecuada al archivo para subir
 			if($filetype == "rar"){
-				$target_file = $target_file . ".rar";
-			} else if($filetype == "zip"){
-				$target_file = $target_file . ".zip";
-			} else if($filetype == "pdf"){
+				$target_file = $target_file . ".gif";
+			} else if($filetype == "gif"){
+				$target_file = $target_file . ".png";
+			} else if($filetype == "png"){
 				$target_file = $target_file . ".pdf";
-			}else {
+			}else if$filetype == "jpg"){
+				$target_file = $target_file . ".jpg";
+			}else{
 				return false;
+			}
 			}
 			// Verificamos que realmente subiremos un archivo
 			if(!$isset){

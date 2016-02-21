@@ -1,5 +1,5 @@
 <?php
-	require_once('airbook_file.php');
+	require_once('olx_file.php');
 	basename($_FILES["fileToUpload"]["name"]);
 	$archivo = new airbook_file();
 	$status = $archivo->upload(3, basename($_FILES["fileToUpload"]["name"]),
